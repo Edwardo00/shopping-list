@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    font-family: 'Manrope';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    border: 2px solid black;
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    background: linear-gradient(to bottom, #f0f2f0, #000c40);
+    padding-bottom: 20px;
+    border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+    text-align: center;
+    padding: 80px;
+    font-size: 40px;
+    background: linear-gradient(to bottom, #03001e, #7303c0, #ec38bc, #fdeff9);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.bg {
+    background: linear-gradient(to top, #1d2b64, #f8cdda);
+    height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+    padding: 10px;
+    list-style: none;
+    color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+
+h2 {
+    margin: 15px;
+    background: linear-gradient(to top, #5f2c82, #49a09d);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input {
+    margin-bottom: 15px;
+    width: 17em;
+    height: 2.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+.delete {
+    color: red;
+    border: none;
+    background: transparent;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form > button {
+    width: 4em;
+    height: 2.5em;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
 }
